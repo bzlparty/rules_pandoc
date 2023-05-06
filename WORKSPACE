@@ -2,24 +2,24 @@
 workspace(
     # If your ruleset is "official"
     # (i.e. is in the bazelbuild GitHub org)
-    # then this should just be named "rules_mylang"
+    # then this should just be named "rules_pandoc"
     # see https://docs.bazel.build/versions/main/skylark/deploying.html#workspace
-    name = "com_myorg_rules_mylang",
+    name = "mgred_rules_pandoc",
 )
 
-load(":internal_deps.bzl", "rules_mylang_internal_deps")
+load(":internal_deps.bzl", "rules_pandoc_internal_deps")
 
 # Fetch deps needed only locally for development
-rules_mylang_internal_deps()
+rules_pandoc_internal_deps()
 
-load("//mylang:repositories.bzl", "mylang_register_toolchains", "rules_mylang_dependencies")
+load("//pandoc:repositories.bzl", "pandoc_register_toolchains", "rules_pandoc_dependencies")
 
 # Fetch dependencies which users need as well
-rules_mylang_dependencies()
+rules_pandoc_dependencies()
 
-mylang_register_toolchains(
-    name = "mylang1_14",
-    mylang_version = "1.14.2",
+pandoc_register_toolchains(
+    name = "pandoc1_14",
+    pandoc_version = "1.14.2",
 )
 
 # For running our own unit tests
