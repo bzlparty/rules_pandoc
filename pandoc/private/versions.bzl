@@ -5,10 +5,11 @@ TODO: generate this file from GitHub API"""
 # The integrity hashes can be computed with
 # shasum -b -a 384 [downloaded file] | awk '{ print $1 }' | xxd -r -p | base64
 TOOL_VERSIONS = {
-    "1.14.2": {
-        "x86_64-apple-darwin": "sha384-ws4+rANvv0YxM1SgIBUXSG9jT8dKw83nls6R5qYkEKzPUB+viBIEozSsyq2e6i+f",
-        "aarch64-apple-darwin": "sha384-HcvJbxoJtGSavkGu0e7CyD00cBlmDb0TBWJ4JSaNa70zuU3N7XlMOYm3bbQcAv2U",
-        "x86_64-pc-windows-msvc": "sha384-35YN6TKpT0L9qyRBmq48NucvyXEtHnkeC+txf2YZmmJTmOzrAKREA74BA0EZvpar",
-        "x86_64-unknown-linux-gnu": "sha384-QgGOwTaetxY0h5HWCKc/3ZtBs4N/fgaaORthn7UcEv++Idm9W+ntCCZRwvBdwHPD",
+    "3.1.2": {
+        "arm64-macOS": "sha384-x4lL0XR8AitgXnZftL+2FeWWkRrZmiQrT3pREVlPcJWu6TWki/MyyrUm3kOAIGUW",
+        "linux-amd64": "sha384-7aT0WyaSLu4czAddZNvvGNqhetHgOemjjtZvQoEe4PfRnIJtOpPtWZoZEU6sOA03",
+        "linux-arm64": "sha384-YBzve6BRS83/W/WAkNoWc5rkyLIjiiD8JcAu4b3YqDFdgonXH2C6MxqwGssYvHtL",
+        "windows-x86_64": "sha384-VXsxk1o6P29lu5nGKTdWu1YNXbS5/oKR8oJn/afU18u5qiPAajXpGWWtAIYFYzoy",
+        "x86_64-macOS": "sha384-ZbvJns5zBHgu4F1PuAGljVCV/+e4qVG7aMoNn1Twjb1GBWx9o6NtkuoKbp4EKEu6",
     },
 }
