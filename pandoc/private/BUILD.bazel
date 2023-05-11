@@ -1,6 +1,12 @@
 load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 bzl_library(
+    name = "pandoc",
+    srcs = ["pandoc.bzl"],
+    visibility = ["//pandoc:__subpackages__"],
+)
+
+bzl_library(
     name = "toolchains_repo",
     srcs = ["toolchains_repo.bzl"],
     visibility = ["//pandoc:__subpackages__"],

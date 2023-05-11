@@ -1,5 +1,5 @@
 "Public API re-exports"
 
-def example():
-    """This is an example"""
-    pass
+load("//pandoc/private:pandoc.bzl", _pandoc = "pandoc")
+
+pandoc = _pandoc
