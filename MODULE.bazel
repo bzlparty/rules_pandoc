@@ -15,7 +15,7 @@ bazel_dep(name = "aspect_bazel_lib", version = "1.32.1", dev_dependency = True)
 bazel_dep(name = "buildifier_prebuilt", version = "6.1.0", dev_dependency = True)
 
 pandoc = use_extension("//pandoc:extensions.bzl", "pandoc")
-pandoc.toolchain(pandoc_version = "1.14.2")
+pandoc.toolchain(pandoc_version = "3.1.2")
 use_repo(pandoc, "pandoc_toolchains")
 
 register_toolchains("@pandoc_toolchains//:all")
