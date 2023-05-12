@@ -32,7 +32,6 @@ def _pandoc_implementation(ctx):
         mnemonic = "PandocConvert",
         executable = pandoc.target_tool_path,
         tools = pandoc.tool_files,
-        toolchain = "@mgred_rules_pandoc//pandoc:toolchain",
     )
 
 pandoc = rule(
