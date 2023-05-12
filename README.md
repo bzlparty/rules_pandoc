@@ -1,5 +1,7 @@
 # Bazel rules for pandoc
 
+[![CI](https://github.com/mgred/rules_pandoc/actions/workflows/ci.yaml/badge.svg)](https://github.com/mgred/rules_pandoc/actions/workflows/ci.yaml)
+
 ## Installation
 
 From the release you wish to use:
