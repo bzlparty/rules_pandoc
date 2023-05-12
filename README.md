@@ -8,6 +8,10 @@ From the release you wish to use:
 <https://github.com/mgred/rules_pandoc/releases>
 copy the WORKSPACE snippet into your `WORKSPACE` file.
 
+<details>
+
+<summary>From a specific commit</summary>
+
 To use a commit rather than a release, you can point at any SHA of the repo.
 
 For example to use commit `abc123`:
@@ -18,3 +22,21 @@ For example to use commit `abc123`:
    print a message with the correct value. Note that GitHub source archives don't have a strong
    guarantee on the sha256 stability, see
    <https://github.blog/2023-02-21-update-on-the-future-stability-of-source-code-archives-and-hashes/>
+
+</details>
+
+## Usage
+
+```starlark
+load("@mgred_rules_pandoc//pandoc:defs.bzl", "pandoc")
+
+pandoc(
+    name = "html",
+    input = "index.md",
+    out = "index.html",
+    standalone = True,
+    title = "Index",
+)
+```
+
+See the [rules documentation](https://github.com/mgred/rules_pandoc/blob/main/docs/rules.md) for more.
