@@ -23,6 +23,8 @@ def _pandoc_implementation(ctx):
     if ctx.attr.toc:
         args.add("--table-of-contents")
 
+    args.add_all(ctx.attr.args)
+
     args.add(ctx.file.input)
 
     ctx.actions.run(
@@ -44,6 +46,7 @@ pandoc = rule(
             allow_single_file = True,
             doc = "input file to convert",
         ),
+        "args": attr.string_list(default = []),
         "from": attr.string(),
         "to": attr.string(),
         "title": attr.string(),
