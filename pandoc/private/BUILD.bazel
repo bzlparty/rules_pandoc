@@ -4,6 +4,10 @@ bzl_library(
     name = "pandoc",
     srcs = ["pandoc.bzl"],
     visibility = ["//pandoc:__subpackages__"],
+    deps = [
+        "@aspect_bazel_lib//lib:expand_make_vars",
+        "@mgred_bazel_lib//:defs",
+    ],
 )
 
 bzl_library(

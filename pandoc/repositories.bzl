@@ -32,6 +32,20 @@ def rules_pandoc_dependencies():
         ],
     )
 
+    http_archive(
+        name = "aspect_bazel_lib",
+        sha256 = "e3151d87910f69cf1fc88755392d7c878034a69d6499b287bcfc00b1cf9bb415",
+        strip_prefix = "bazel-lib-1.32.1",
+        url = "https://github.com/aspect-build/bazel-lib/releases/download/v1.32.1/bazel-lib-v1.32.1.tar.gz",
+    )
+
+    http_archive(
+        name = "mgred_bazel_lib",
+        sha256 = "9739e6428daa0d5da0eb279c9638867f3c83b9eba95abd062942098b3da2ff36",
+        strip_prefix = "bazel_lib-1.2.2",
+        url = "https://github.com/mgred/bazel_lib/releases/download/v1.2.2/bazel_lib-v1.2.2.tar.gz",
+    )
+
 ########
 # Remaining content of the file is only used to support toolchains.
 ########
