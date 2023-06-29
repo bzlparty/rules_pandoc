@@ -6,7 +6,7 @@ bzl_library(
     visibility = ["//pandoc:__subpackages__"],
     deps = [
         "@aspect_bazel_lib//lib:expand_make_vars",
-        "@mgred_bazel_lib//:defs",
+        "@lib_common//:defs",
     ],
 )
 

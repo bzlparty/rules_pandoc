@@ -4,7 +4,7 @@ Add a basic smoke-test target below.
 
 load("@bazel_skylib//rules:build_test.bzl", "build_test")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
-load("@mgred_rules_pandoc//pandoc:defs.bzl", "pandoc")
+load("@rules_pandoc//pandoc:defs.bzl", "pandoc")
 
 write_file(
     name = "input_md",

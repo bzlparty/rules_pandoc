@@ -1,7 +1,7 @@
 "Bazel dependencies"
 
 module(
-    name = "mgred_rules_pandoc",
+    name = "rules_pandoc",
     compatibility_level = 1,
     version = "0.0.0",
 )

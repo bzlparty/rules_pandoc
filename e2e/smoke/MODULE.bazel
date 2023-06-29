@@ -1,7 +1,7 @@
-bazel_dep(name = "mgred_rules_pandoc", dev_dependency = True, version = "0.0.0")
+bazel_dep(name = "rules_pandoc", dev_dependency = True, version = "0.0.0")
 bazel_dep(name = "bazel_skylib", dev_dependency = True, version = "1.3.0")
 
 local_path_override(
-    module_name = "mgred_rules_pandoc",
+    module_name = "rules_pandoc",
     path = "../..",
 )

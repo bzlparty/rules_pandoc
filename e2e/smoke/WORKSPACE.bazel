@@ -1,6 +1,6 @@
 # Override http_archive for local testing
 local_repository(
-    name = "mgred_rules_pandoc",
+    name = "rules_pandoc",
     path = "../..",
 )
 
@@ -14,7 +14,7 @@ local_repository(
 # you should fetch it *before* calling this.
 # Alternatively, you can skip calling this function, so long as you've
 # already fetched all the dependencies.
-load("@mgred_rules_pandoc//pandoc:repositories.bzl", "rules_pandoc_dependencies", "pandoc_register_toolchains", "LATEST_PANDOC_VERSION")
+load("@rules_pandoc//pandoc:repositories.bzl", "rules_pandoc_dependencies", "pandoc_register_toolchains", "LATEST_PANDOC_VERSION")
 
 rules_pandoc_dependencies()
 

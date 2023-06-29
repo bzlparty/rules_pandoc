@@ -69,7 +69,7 @@ toolchain(
     name = "{platform}_toolchain",
     exec_compatible_with = {compatible_with},
     toolchain = "@{user_repository_name}_{platform}//:pandoc_toolchain",
-    toolchain_type = "@mgred_rules_pandoc//pandoc:toolchain_type",
+    toolchain_type = "@rules_pandoc//pandoc:toolchain_type",
 )
 """.format(
             platform = platform,

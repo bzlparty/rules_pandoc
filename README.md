@@ -1,11 +1,11 @@
 # Bazel rules for pandoc
 
-[![CI](https://github.com/mgred/rules_pandoc/actions/workflows/ci.yaml/badge.svg)](https://github.com/mgred/rules_pandoc/actions/workflows/ci.yaml)
+[![CI](https://github.com/bzlparty/rules_pandoc/actions/workflows/ci.yaml/badge.svg)](https://github.com/bzlparty/rules_pandoc/actions/workflows/ci.yaml)
 
 ## Installation
 
 From the release you wish to use:
-<https://github.com/mgred/rules_pandoc/releases>
+<https://github.com/bzlparty/rules_pandoc/releases>
 copy the WORKSPACE snippet into your `WORKSPACE` file.
 
 <details>
@@ -16,7 +16,7 @@ To use a commit rather than a release, you can point at any SHA of the repo.
 
 For example to use commit `abc123`:
 
-1. Replace `url = "https://github.com/mgred/rules_pandoc/releases/download/v0.1.0/rules_pandoc-v0.1.0.tar.gz"` with a GitHub-provided source archive like `url = "https://github.com/mgred/rules_pandoc/archive/abc123.tar.gz"`
+1. Replace `url = "https://github.com/bzlparty/rules_pandoc/releases/download/v0.1.0/rules_pandoc-v0.1.0.tar.gz"` with a GitHub-provided source archive like `url = "https://github.com/bzlparty/rules_pandoc/archive/abc123.tar.gz"`
 1. Replace `strip_prefix = "rules_pandoc-0.1.0"` with `strip_prefix = "rules_pandoc-abc123"`
 1. Update the `sha256`. The easiest way to do this is to comment out the line, then Bazel will
    print a message with the correct value. Note that GitHub source archives don't have a strong
@@ -28,7 +28,7 @@ For example to use commit `abc123`:
 ## Usage
 
 ```starlark
-load("@mgred_rules_pandoc//pandoc:defs.bzl", "pandoc")
+load("@rules_pandoc//pandoc:defs.bzl", "pandoc")
 
 pandoc(
     name = "html",
@@ -39,4 +39,4 @@ pandoc(
 )
 ```
 
-See the [rules documentation](https://github.com/mgred/rules_pandoc/blob/main/docs/rules.md) for more.
+See the [rules documentation](https://github.com/bzlparty/rules_pandoc/blob/main/docs/rules.md) for more.

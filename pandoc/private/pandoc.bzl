@@ -3,10 +3,10 @@ Rule to convert file with [pandoc](https://pandoc.org/).
 """
 
 load("@aspect_bazel_lib//lib:expand_make_vars.bzl", "expand_locations")
-load("@mgred_bazel_lib//:defs.bzl", "map")
+load("@lib_common//:defs.bzl", "map")
 
 def _pandoc_implementation(ctx):
-    pandoc_toolchain = ctx.toolchains["@mgred_rules_pandoc//pandoc:toolchain_type"]
+    pandoc_toolchain = ctx.toolchains["@rules_pandoc//pandoc:toolchain_type"]
     pandoc = pandoc_toolchain.pandocinfo
     args = ctx.actions.args()
 
@@ -63,6 +63,6 @@ pandoc = rule(
     },
     implementation = _pandoc_implementation,
     toolchains = [
-        "@mgred_rules_pandoc//pandoc:toolchain_type",
+        "@rules_pandoc//pandoc:toolchain_type",
     ],
 )

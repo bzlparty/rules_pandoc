@@ -4,7 +4,7 @@ workspace(
     # (i.e. is in the bazelbuild GitHub org)
     # then this should just be named "rules_pandoc"
     # see https://docs.bazel.build/versions/main/skylark/deploying.html#workspace
-    name = "mgred_rules_pandoc",
+    name = "rules_pandoc",
 )
 
 load(":internal_deps.bzl", "rules_pandoc_internal_deps")
