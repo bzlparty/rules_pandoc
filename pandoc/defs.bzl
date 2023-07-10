@@ -1,4 +1,6 @@
-"Public API re-exports"
+"""
+# Rules
+"""
 
 load("//pandoc/private:pandoc.bzl", _pandoc = "pandoc")
 
