@@ -1,9 +1,7 @@
-"Bazel dependencies"
-
 module(
     name = "rules_pandoc",
-    compatibility_level = 1,
     version = "0.0.0",
+    compatibility_level = 1,
 )
 
 bazel_dep(name = "bazel_skylib", version = "1.4.1")
